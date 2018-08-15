@@ -1,5 +1,8 @@
 package com.example.meeravasudevan.tictactoe
 
+import android.graphics.Color
+import android.graphics.Color.CYAN
+import android.graphics.Color.GREEN
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -30,6 +33,24 @@ class MainActivity : AppCompatActivity() {
         }
 
         Toast.makeText(this, "Cell ID: $cellId", Toast.LENGTH_SHORT).show()
+        initiateMove(selectedButton)
     }
+
+    private var usersTurn = true
+
+    fun initiateMove(selectedButton: Button) {
+
+        if (usersTurn) {
+            selectedButton.text = "X"
+            selectedButton.setBackgroundColor(CYAN)
+            usersTurn = !usersTurn
+        }
+        else {
+            selectedButton.text = "O"
+            selectedButton.setBackgroundColor(GREEN)
+            usersTurn = !usersTurn
+        }
+    }
+
 
 }
