@@ -13,18 +13,21 @@
 
         <Button
             android:id="@+id/Button_00"
+            android:onClick="getCellId"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_margin="5dp" />
 
         <Button
             android:id="@+id/Button_01"
+            android:onClick="getCellId"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_margin="5dp" />
 
         <Button
             android:id="@+id/Button_02"
+            android:onClick="getCellId"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_margin="5dp" />
@@ -38,6 +41,7 @@
 
         <Button
             android:id="@+id/Button_10"
+            android:onClick="getCellId"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_margin="5dp" />
@@ -45,12 +49,14 @@
 
         <Button
             android:id="@+id/Button_11"
+            android:onClick="getCellId"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_margin="5dp" />
 
         <Button
             android:id="@+id/Button_12"
+            android:onClick="getCellId"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_margin="5dp" />
@@ -64,18 +70,21 @@
 
         <Button
             android:id="@+id/Button_20"
+            android:onClick="getCellId"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_margin="5dp" />
 
         <Button
             android:id="@+id/Button_21"
+            android:onClick="getCellId"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_margin="5dp" />
 
         <Button
             android:id="@+id/Button_22"
+            android:onClick="getCellId"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:layout_margin="5dp" />
