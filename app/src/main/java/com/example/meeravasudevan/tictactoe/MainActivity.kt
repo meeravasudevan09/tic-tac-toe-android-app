@@ -1,6 +1,5 @@
 package com.example.meeravasudevan.tictactoe
 
-import android.graphics.Color
 import android.graphics.Color.CYAN
 import android.graphics.Color.GREEN
 import android.support.v7.app.AppCompatActivity
@@ -19,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     fun getCellId(view: View) {
         val selectedButton = view as Button
 
-        val cellId = when(selectedButton.id) {
+        val cellId = when (selectedButton.id) {
             R.id.Button_00 -> 1
             R.id.Button_01 -> 2
             R.id.Button_02 -> 3
@@ -44,13 +43,13 @@ class MainActivity : AppCompatActivity() {
             selectedButton.text = "X"
             selectedButton.setBackgroundColor(CYAN)
             usersTurn = !usersTurn
-        }
-        else {
+            selectedButton.isClickable = false
+        } else {
             selectedButton.text = "O"
             selectedButton.setBackgroundColor(GREEN)
             usersTurn = !usersTurn
+            selectedButton.isClickable = false
         }
     }
-
 
 }
